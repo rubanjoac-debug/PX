@@ -1,5 +1,3 @@
-// REPLACE YOUR CURRENT script.js WITH THIS
-
 // ================= MOBILE MENU =================
 
 const menuBtn = document.getElementById("menuBtn");
@@ -64,6 +62,40 @@ const testimonials = [
 {
   text: "Professional, creative and very reliable. Our website now looks world-class.",
   name: "Sarah M."
+},
+
+{
+  text: "Excellent service delivery and modern designs. Highly recommended digital agency.",
+  name: "Michael K."
+}
+
+];
+
+const testimonialText =
+document.querySelector(".testimonial-box p");
+
+const testimonialName =
+document.querySelector(".testimonial-box h4");
+
+let currentTestimonial = 0;
+
+function changeTestimonial(){
+
+  currentTestimonial++;
+
+  if(currentTestimonial >= testimonials.length){
+    currentTestimonial = 0;
+  }
+
+  testimonialText.innerText =
+  testimonials[currentTestimonial].text;
+
+  testimonialName.innerText =
+  "- " + testimonials[currentTestimonial].name;
+
+}
+
+setInterval(changeTestimonial, 5000);  name: "Sarah M."
 },
 
 {
