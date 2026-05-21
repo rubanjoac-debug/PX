@@ -835,3 +835,33 @@ footer{
   }
 
 }
+/* ================= THANK YOU PAGE ================= */
+
+.thankyou-page{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#050816;
+  padding:40px;
+}
+
+.thankyou-box{
+  max-width:650px;
+  text-align:center;
+  background:#0d132b;
+  padding:60px;
+  border-radius:25px;
+  border:1px solid rgba(255,255,255,0.08);
+}
+
+.thankyou-box h1{
+  font-size:48px;
+  color:#1f8fff;
+  margin-bottom:20px;
+}
+
+.thankyou-box p{
+  line-height:1.8;
+  margin-bottom:35px;
+}
