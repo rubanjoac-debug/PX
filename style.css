@@ -489,28 +489,7 @@ footer{
   }
 
 }
-/* ADD THESE TO THE BOTTOM OF style.css */
 
-/* ================= SCROLL REVEAL ================= */
-
-.service-card,
-.about-card,
-.project-card,
-.testimonial-box,
-.stat-box{
-  opacity:0;
-  transform:translateY(40px);
-  transition:all 0.8s ease;
-}
-
-.service-card.show,
-.about-card.show,
-.project-card.show,
-.testimonial-box.show,
-.stat-box.show{
-  opacity:1;
-  transform:translateY(0);
-}
 
 /* ================= CUSTOM SCROLLBAR ================= */
 
