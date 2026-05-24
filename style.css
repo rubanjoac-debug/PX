@@ -78,7 +78,7 @@ nav a:hover{
   background:
   linear-gradient(rgba(0,0,0,0.6),
   rgba(0,0,0,0.7)),
-  url('copilot-image-10-bg.jpeg');
+  url('copilot-image-10/hero-bg.jpeg');
   background-size:cover;
   background-position:center;
   display:flex;
