@@ -91,6 +91,8 @@ nav a:hover{
   align-items:center;
   text-align:center;
   position:relative;
+
+  isolation:isolate;
 }
 
 .hero-content{
@@ -631,14 +633,14 @@ footer{
 .hero::before{
   content:'';
   position:absolute;
-  width:200%;
-  height:200%;
+  inset:0;
   background:
   radial-gradient(circle,
-  rgba(0,140,255,0.18) 0%,
-  transparent 60%);
+  rgba(0,140,255,0.08) 0%,
+  transparent 70%);
 
   animation:rotateGlow 18s linear infinite;
+  z-index:1;
 }
 
 @keyframes rotateGlow{
@@ -654,12 +656,11 @@ footer{
 }
 
 /* ================= FLOATING PARTICLES ================= */
-
 .animated-bg{
   position:absolute;
   inset:0;
   overflow:hidden;
-  z-index:1;
+  z-index:0;
 }
 
 .animated-bg span{
@@ -802,11 +803,12 @@ footer{
   linear-gradient(
   120deg,
   transparent 20%,
-  rgba(255,255,255,0.08) 40%,
+  rgba(255,255,255,0.03) 40%,
   transparent 60%
   );
 
   animation:lightMove 8s linear infinite;
+  z-index:1;
 }
 
 @keyframes lightMove{
