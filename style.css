@@ -74,13 +74,18 @@ nav a:hover{
 /* ================= HERO ================= */
 
 .hero{
-  height:100vh;
+  min-height:100vh;
+  padding-top:120px;
+  padding-bottom:80px;
+
   background:
   linear-gradient(rgba(0,0,0,0.6),
   rgba(0,0,0,0.7)),
-  url('copilot-image-10/hero-bg.jpeg');
+  url('copilot-image-10.jpeg');
+
   background-size:cover;
   background-position:center;
+
   display:flex;
   justify-content:center;
   align-items:center;
